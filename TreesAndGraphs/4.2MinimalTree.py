@@ -26,5 +26,5 @@ if __name__ == "__main__":
     head = binarySearch(arr)
     print(findMaxDepth(head))
     
-    # Remember that the max depth of a full balanced tree is equal to log(len(arr))/log(2) rounded up to the nearest int.
+    # Remember that the max depth of a complete tree is equal to log(len(arr))/log(2) rounded up to the nearest int.
     

@@ -3,6 +3,10 @@ Given a directed graph and two nodes (S and E), design an algorithm to find out 
 """
 
 def bfs(graph:dict, start:str, end:str) -> bool:
+    """
+    Time Complexity: O(V + E) where V is the vertices in the graph and E the edges in the graph
+    Space Complexity: O(V)
+    """
     from collections import deque
     queue = deque()
     queue.append(start)

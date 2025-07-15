@@ -15,6 +15,10 @@ class ListNode:
         self.next = next
 
 def treeBFS(root:TreeNode) -> list:
+    """
+    Time Complexity: O(n) # Without taking into acount the printing function
+    Space Complexity: O(n)
+    """
     if not root:
         return []
     ans = []

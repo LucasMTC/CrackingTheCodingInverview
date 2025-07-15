@@ -10,6 +10,10 @@ class Node:
         self.right = right
 
 def checkBalanced(root:Node) -> bool:
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(log n)
+    """
     if not root:
         return True
     ans = True

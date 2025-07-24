@@ -19,7 +19,7 @@ def binarySearch(num:int, arr:list) -> int:
         mid = l + ((r - l)// 2)
         if num == arr[mid]:
             return mid
-        if arr[l] < arr[mid]:
+        if arr[l] <= arr[mid]:
             if arr[l] <= num < arr[mid]:
                 r = mid - 1
             else:
@@ -40,3 +40,6 @@ if __name__ == "__main__":
     assert binarySearch(1, arr) == 2
     assert binarySearch(4, arr) == 5
     assert binarySearch(6, arr) == 0
+
+    arr = [3, 1]
+    assert binarySearch(1, arr) == 1

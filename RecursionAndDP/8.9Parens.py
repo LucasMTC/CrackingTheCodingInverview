@@ -7,6 +7,10 @@ def generateParenthesis(n:int) -> list:
     curr = []
 
     def backtracking(curr, ans, leftN, rightN):
+        """
+        Time Complexity: O(n ^ 4 / sqrt(n)) Where n is the amount of pairs of parenthesis
+        Space Complexity: O(n)
+        """
         if leftN == rightN == n:
             ans.append("".join(curr))
             return
